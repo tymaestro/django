@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-#b^rtd1)c0y9+tfwpa53b51jc_6tlt=oa4n#2&p5yu+%%pk%v$')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME', 'tymaestro-django-todo-app.herokuapp.com')]
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
